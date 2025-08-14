@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TamaPlayShop</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar container">
+    <div class="brand">
+      <!-- Sostituisci src con il tuo logo PNG/SVG -->
+      <img class="brand-logo" src="assets/tama-logo.png" alt="TamaPlayShop" />
+      <div class="brand-text">
+        <div class="brand-title">Tama</div>
+        <div class="brand-sub">Playshop</div>
+      </div>
+    </div>
+    <a class="btn btn-dark" href="#">Login / Iscriviti</a>
+  </header>
+
+  <main class="container">
+    <!-- Banner pubblicitario fisso -->
+    <div class="ad-slot">SPAZIO PUBBLICITARIO</div>
+
+    <!-- Reward Rush hero -->
+    <section class="hero card gradient">
+      <div class="hero-row">
+        <img class="hero-icon" src="assets/rewardrush-logo.png" alt="Reward Rush">
+        <div class="hero-title">
+          <h1>Reward</h1><h1>Rush</h1>
+        </div>
+      </div>
+      <a class="btn btn-primary" href="#sondaggi">Completa sondaggi e guadagna</a>
+    </section>
+
+    <!-- Voci principali -->
+    <nav class="grid-cta">
+      <a class="cta card" href="#giochi"><span class="ico">🎮</span> Giochi</a>
+      <a class="cta card" href="#premi"><span class="ico">⭐</span> Premi</a>
+      <a class="cta card" href="#relax"><span class="ico">🖐️</span> Stanza Relax</a>
+    </nav>
+
+    <!-- Due macro pulsanti come richiesto -->
+    <div class="cta-row">
+      <a class="btn btn-teal" href="#gioca-e-guadagna">Gioca e guadagna</a>
+      <a class="btn btn-outline" href="#tornei">Giochi da tavolo — tornei & vincite reali</a>
+    </div>
+
+    <!-- Griglia Giochi in evidenza -->
+    <h3 class="section-title">In evidenza</h3>
+    <section id="giochi" class="games-grid">
+      <article class="game card">
+        <img src="assets/egiziacity-cover.jpg" alt="EgiziaCity" class="game-cover">
+        <div class="game-title">EgiziaCity</div>
+        <div class="game-actions">
+          <a class="btn btn-teal small" href="#">Gioca</a>
+          <a class="btn btn-outline small" href="#">Regole</a>
+        </div>
+      </article>
+
+      <article class="game card">
+        <img src="assets/pollaio-cover.jpg" alt="Pollaio Challenge" class="game-cover">
+        <div class="game-title">Pollaio Challenge</div>
+        <div class="game-actions">
+          <a class="btn btn-teal small" href="#">Gioca</a>
+          <a class="btn btn-outline small" href="#">Regole</a>
+        </div>
+      </article>
+
+      <article class="game card">
+        <img src="assets/boardhub-cover.jpg" alt="Giochi da Tavolo" class="game-cover">
+        <div class="game-title">Lobby Giochi da Tavolo</div>
+        <div class="game-actions">
+          <a class="btn btn-teal small" href="#tornei">Vai alla lobby</a>
+          <a class="btn btn-outline small" href="#">Calendario tornei</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Stanza Relax teaser -->
+    <section id="relax" class="relax card">
+      <h2>Stanza Relax</h2>
+      <p>Coach motivatori (AI/umani), benessere mentale (AI/umani), conversazioni tra giocatori e chat private.</p>
+      <div class="relax-actions">
+        <a class="btn btn-teal" href="#">Entra Ora</a>
+        <a class="btn btn-outline" href="#">Scopri i piani</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>Pagamenti supportati</div>
+      <div class="badges">
+        <span class="badge">PayPal</span>
+        <span class="badge">Amazon</span>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

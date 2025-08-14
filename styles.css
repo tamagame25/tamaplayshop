@@ -1,0 +1,52 @@
+/* TamaPlayShop • Tema teal/dark responsive */
+:root{
+  --bg:#0b3a42; --bg2:#0e4751; --card:#0c3941; --muted:#083138;
+  --text:#eaf9ff; --brand:#b8f7ff;
+  --teal:#19e0d3; --teal2:#12d2c5; --gold:#ffb92c;
+  --line:rgba(255,255,255,.08);
+}
+*{box-sizing:border-box}
+html,body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;color:var(--text);
+  background:radial-gradient(1200px 800px at 20% -10%, #10606c 0%, var(--bg) 60%) fixed}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding-top:16px}
+.brand{display:flex;gap:12px;align-items:center}
+.brand-logo{width:44px;height:44px;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.2))}
+.brand-title{font-weight:800;letter-spacing:.5px;font-size:26px;line-height:1;color:var(--brand)}
+.brand-sub{margin-top:-2px;font-weight:700;opacity:.9;color:var(--text)}
+.btn{display:inline-block;padding:14px 18px;border-radius:14px;text-decoration:none;font-weight:800;transition:.2s ease;box-shadow:0 10px 18px rgba(0,0,0,.18)}
+.btn-dark{background:#0f2d33;border:1px solid #183c43;color:#d5f7ff}
+.btn-dark:hover{transform:translateY(-1px) scale(1.01)}
+.ad-slot{background:linear-gradient(90deg,#14d7c9,#0fb1a7);padding:18px;border-radius:16px;text-align:center;font-weight:900;letter-spacing:.6px;margin:18px 0 26px 0;color:#042b30}
+.card{background:linear-gradient(180deg,var(--card),var(--muted));border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 14px 30px rgba(0,0,0,.25)}
+.gradient{background:radial-gradient(800px 500px at -10% -20%, #134a54 0%, #0c2e35 70%)}
+.hero{display:flex;flex-direction:column;gap:18px}
+.hero-row{display:flex;gap:18px;align-items:center}
+.hero-icon{width:66px;height:66px;object-fit:contain}
+.hero-title h1{margin:0;font-size:40px;line-height:1.05;font-weight:900;letter-spacing:.5px}
+.btn-primary{background:linear-gradient(180deg,#ffd463,#ffb111);color:#3b2a00;border:none}
+.btn-primary:hover{filter:brightness(1.05)}
+.grid-cta{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0}
+.cta{display:flex;align-items:center;gap:12px;padding:16px 18px;font-weight:800}
+.ico{font-size:22px}
+.cta-row{display:flex;gap:16px;flex-wrap:wrap}
+.btn-teal{background:linear-gradient(180deg,#1ee6d9,#13c8bb);color:#023133}
+.btn-outline{border:2px solid #1dd7cb;color:#a9f8f2;padding:12px 16px;border-radius:14px}
+.section-title{font-size:14px;text-transform:uppercase;letter-spacing:.14em;color:#9bd4d1;margin:12px 0 6px 6px}
+.games-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:8px 0 14px}
+.game-cover{width:100%;height:152px;object-fit:cover;border-radius:14px}
+.game-title{padding:10px 6px 4px 6px;font-weight:900;letter-spacing:.3px}
+.game-actions{display:flex;gap:8px;padding:0 6px 12px 6px}
+.btn.small{padding:10px 12px;border-radius:12px;font-size:.92rem}
+.relax h2{margin:0 0 6px 0}
+.relax p{margin:0 0 12px 0;color:#bbf5ff}
+.relax-actions{display:flex;gap:12px;flex-wrap:wrap}
+.footer{display:flex;justify-content:space-between;align-items:center;opacity:.85;border-top:1px solid var(--line);padding:22px 4px;margin-top:8px}
+.badges{display:flex;gap:10px}
+.badge{background:#0d2b30;padding:8px 10px;border-radius:10px;border:1px solid #18434a}
+@media (max-width:960px){.games-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){
+  .grid-cta{grid-template-columns:1fr}
+  .games-grid{grid-template-columns:1fr}
+  .hero-title h1{font-size:34px}
+}
